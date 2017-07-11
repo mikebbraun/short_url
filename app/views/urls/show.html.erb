@@ -1,5 +1,11 @@
 <p id="notice"><%= notice %></p>
 
+
+<p>
+  <strong>ID:</strong>
+  <%= @url.id %>
+</p>
+
 <p>
   <strong>Url:</strong>
   <%= @url.url %>
@@ -8,6 +14,10 @@
 <p>
   <strong>Shortened url:</strong>
   <%= @url.shortened_url %>
+</p>
+
+<p>
+  Your shortened Url is /<%=@url.id%>
 </p>
 
 <%= link_to 'Edit', edit_url_path(@url) %> |

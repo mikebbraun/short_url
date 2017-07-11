@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>ID</th>
       <th>Url</th>
       <th>Shortened url</th>
       <th colspan="3"></th>
@@ -14,6 +15,7 @@
   <tbody>
     <% @urls.each do |url| %>
       <tr>
+        <td><%= url.id %></td>
         <td><%= url.url %></td>
         <td><%= url.shortened_url %></td>
         <td><%= link_to 'Show', url %></td>

@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   get '/:id', to: 'urls#show'
 
+  get '/:shortened_url', to: 'urls#show'
   # get '/:id' => redirect_to('http://www.google.com')
 
 end

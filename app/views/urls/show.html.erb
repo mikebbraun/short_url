@@ -17,7 +17,7 @@
 </p>
 
 <p>
-  Your shortened Url is /<%=@url.id%>
+  Your shortened Url is <a href='<%= @url.url %>'>/<%=@url.shortened_url%></a>
 </p>
 
 <%= link_to 'Edit', edit_url_path(@url) %> |
